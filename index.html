@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ระบบอ่านข้อสอบ</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="libs/mammoth.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>ระบบอ่านข้อสอบ</h2>
+
+<div id="qNumber"></div>
+
+<div id="question" class="question"></div>
+
+<div id="choices"></div>
+
+<div class="controls">
+
+<button onclick="readQuestion()">🔊 อ่านข้อสอบ</button>
+
+<button onclick="readChoices()">🔊 อ่านตัวเลือก</button>
+
+<br>
+
+<button onclick="prev()">⬅️ ก่อนหน้า</button>
+
+<button onclick="next()">➡️ ถัดไป</button>
+
+</div>
+
+<hr>
+
+ความเร็วเสียง
+
+<input type="range" id="speed" min="0.5" max="1.5" step="0.1" value="1">
+
+<br><br>
+
+ตั้งเวลาอ่าน (วินาที)
+
+<input type="number" id="delay" value="0">
+
+<br><br>
+
+<button onclick="toggleRepeat()">🔁 อ่านซ้ำ</button>
+
+<button onclick="examMode()">👨‍🎓 โหมดสอบ</button>
+
+<hr>
+
+โหลดไฟล์ข้อสอบ
+
+<input type="file" id="fileInput">
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
