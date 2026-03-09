@@ -1,0 +1,39 @@
+body{
+font-family: system-ui;
+background:#f0f2f5;
+text-align:center;
+padding:20px;
+}
+
+.container{
+max-width:700px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.question{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.choice{
+font-size:20px;
+margin:6px;
+}
+
+button{
+padding:10px 16px;
+margin:5px;
+border:none;
+border-radius:8px;
+background:#2b7cff;
+color:white;
+cursor:pointer;
+}
+
+.controls{
+margin-top:15px;
+}
